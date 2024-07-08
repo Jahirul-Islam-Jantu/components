@@ -129,7 +129,7 @@
     padding: 1rem 2.5rem;
     background: transparent;
     border: 1px solid #3b82f6;
-    color: #ffffff;
+    color: #1d68f8;
     font-size: 1.2rem;
     cursor: pointer;
     transition: 0.3s;
@@ -137,19 +137,71 @@
 }
 .btn5:hover{
     transition: 0.2s ease-in-out;
-    letter-spacing: 2px;
     .button-text{
         display: inline-block;
-        animation: left-to 3s ease-in-out infinite;
+        animation: shadow 3s linear infinite;
     }
 }
-@keyframes left-to {
-    0% { transition: 0.3s;  color: #ffffff; translate: 45%;   }
-    25% { transition: 0.3s; color: aquamarine;  }
-    50% { transition: 0.3s; color: #00ffb8; translate: -45%  ;  }
-    75% { transition: 0.3s;  color: aquamarine;  }
-    100% { transition: 0.3s;  color: #ffffff; translate: 45%;  }
+@keyframes shadow {
+    0% { transition: 0.3s;  color: #6596fa;  text-shadow: 0px 0px 20px #6596fa; scale: 100% 1; }
+    25% { transition: 0.3s;  }
+    50% { transition: 0.3s; color: #0052ff; text-shadow: 0px 0px 40px #0052ff; }
+    75% { transition: 0.3s;    }
+    100% { transition: 0.3s;  color: #659aff;  text-shadow: 0px 0px 60px #659aff; scale: 200% 1;}
+}
+.btn6{
+    padding: 1rem 2.5rem;
+    background: transparent;
+    border: 1px solid #3b82f6;
+    color: #1d68f8;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: bord 3s ease-in-out infinite;
+    border-radius: 10px 20px;
+
+}
+@keyframes bord {
+    0% {
+        box-shadow: inset 0px 0px  0px #1d68f8, 0px 0px 5px #1d68f8;
+    }
+    50% {
+        box-shadow: inset 0px 0px  10px #1d68f8, 0px 0px 10px #1d68f8;
+    }
+    100% {
+        box-shadow: inset 0px 0px  0px #1d68f8, 0px 0px 5px #1d68f8
+    }
+}
+.button-text1{
+    display: inline-block;
+    letter-spacing: 1px;
+    animation: moveInOut 3s linear infinite;
 }
 
+
+@keyframes moveInOut {
+    0% { transition: 0.3s;  color: #1d68f8; translate: 45%;  text-shadow: 0px 0px 5px  }
+    25% { transition: 0.3s; color: #06368c;  }
+    50% { transition: 0.3s; color: #04389f; translate: -45%  ; text-shadow: 0px 0px 10px  }
+    75% { transition: 0.3s;  color: #0840a2;  }
+    100% { transition: 0.3s;  color: #1d68f8; translate: 45%; text-shadow: 0px 0px 5px  }
+}
+.btn7{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #3b82f6;
+    text-align: center;
+    color: white;
+    background: #1d68f8;
+    background: linear-gradient(to left, #1d68f8 50%, #ffffff 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    display: inline-block;
+
+}
+.btn7:hover{
+    background-position: left;
+    color: #1d68f8;
+}
 
 
