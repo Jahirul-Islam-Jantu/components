@@ -2,16 +2,23 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Fira Code";
 }
+
 .button-group{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     position: relative;
     top: 15rem;
     flex-wrap: wrap;
+    width: 50%;
+    left: 25%;
+
+
+
     
 }
 .btn{
@@ -119,11 +126,11 @@
     }
 }
 @keyframes left-to-right {
-    0% { transition: 0.3s;  color: #ffffff; translate: 45%;   }
+    0% { transition: 0.3s;  color: #ffffff; translate: 40%;   }
     25% { transition: 0.3s; color: aquamarine;  }
-    50% { transition: 0.3s; color: #00ffb8; translate: -45%  ;  }
+    50% { transition: 0.3s; color: #00ffb8; translate: -40%  ;  }
     75% { transition: 0.3s;  color: aquamarine;  }
-    100% { transition: 0.3s;  color: #ffffff; translate: 45%;  }
+    100% { transition: 0.3s;  color: #ffffff; translate: 40%;  }
 }
 .btn5{
     padding: 1rem 2.5rem;
@@ -180,11 +187,11 @@
 
 
 @keyframes moveInOut {
-    0% { transition: 0.3s;  color: #1d68f8; translate: 45%;  text-shadow: 0px 0px 5px  }
+    0% { transition: 0.3s;  color: #1d68f8; translate: 35%;  text-shadow: 0px 0px 5px;  }
     25% { transition: 0.3s; color: #06368c;  }
-    50% { transition: 0.3s; color: #04389f; translate: -45%  ; text-shadow: 0px 0px 10px  }
+    50% { transition: 0.3s; color: #04389f; translate: -35%  ; text-shadow: 0px 0px 10px;   }
     75% { transition: 0.3s;  color: #0840a2;  }
-    100% { transition: 0.3s;  color: #1d68f8; translate: 45%; text-shadow: 0px 0px 5px  }
+    100% { transition: 0.3s;  color: #1d68f8; translate: 35%; text-shadow: 0px 0px 5px;  }
 }
 .btn7{
     padding: 1rem 2.5rem;
@@ -197,11 +204,131 @@
     background-size: 200%;
     transition: .5s ease-out;
     display: inline-block;
+    cursor: pointer;
 
 }
 .btn7:hover{
     background-position: left;
     color: #1d68f8;
 }
+.btn8{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #3b82f6;
+    text-align: center;
+    color: white;
+    background: #1d68f8;
+    background: linear-gradient(to right, #6235ef 50%, #ffffff 50%) left;
+    background-size: 200%;
+    transition: .5s ease-out;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn8:hover{
+    background-position: right;
+    color: #6235ef;
+}
+.btn9{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #4f4f4f;
+    text-align: center;
+    color: white;
+    background: #4f4f4f;
+    background: linear-gradient(to right, #4f4f4f 50%, #ffffff 50%) left;
+    background-size: 200%;
+    display: inline-block;
+    transition: .5s ease-out;
+    cursor: pointer;
+
+}
+.btn9:hover {
+    animation: any 3s linear infinite;
+}
+@keyframes any {
+
+    0%{
+        background: #4f4f4f;
+        background: linear-gradient(to right, #4f4f4f 50%, #ffffff 50%) left;
+        background-size: 200%;
+        display: inline-block;
+        transition: 0.5s ease-out;
+        border-radius: 0px;
+        background-position: right;
+        color: #4f4f4f;
+    }
+    25%{
+        color: #ffffff;
+    }
+    50%{
+        background: #4f4f4f;
+        background: linear-gradient(to left, #ffffff 50%, #4f4f4f 50%) right;
+        background-size: 200%;
+        display: inline-block;
+        transition: 0.5s ease-out;
+        border-radius: 20px;
+        background-position: left;
+        color: #4f4f4f;
+    }
+    75%{
+        color: #ffffff;
+    }
+    100%{
+        background: #4f4f4f;
+        background: linear-gradient(to right, #4f4f4f 50%, #ffffff 50%) left;
+        background-size: 200%;
+        display: inline-block;
+        transition: .5s ease-out;
+        border-radius: 0px;
+        background-position: right;
+        color: #4f4f4f;
+    }
+}
+.btn10{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #4f4f4f;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #4f4f4f 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
+    transition: background-position 0.5s ease-in-out;
+    color: black;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn10:hover{
+    background-position: top;
+}
+.btn11{
+    padding: 1rem 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #03e5f7;
+    text-align: center;
+    background: #03e5f7;
+    transition: background-position 0.5s ease-in-out;
+    color: #ffffff;
+    cursor: pointer;
+
+}
+.btn11:hover{
+    animation: rot 3s ease-in-out infinite;
+}
+@keyframes rot{
+    0%{
+        rotate: 0deg;
+        border-radius: 20px;
+    }
+    50%{
+        rotate: 180deg;
+        border-radius: 10px;
+    }
+    100%{
+        rotate: 360deg;
+        border-radius: 20px;
+    }
+}
+
+
 
 
